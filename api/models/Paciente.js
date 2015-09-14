@@ -7,6 +7,10 @@
 
 module.exports = {
 
+  tableName = 'paciente',
+  
+  schema: true,	
+
   attributes: {
   	
   	nss: {

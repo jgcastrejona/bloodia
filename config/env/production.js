@@ -35,4 +35,16 @@ module.exports = {
   //   level: "silent"
   // }
 
+        MongodbServer: {
+            adapter: 'sails-mongo',
+            url: process.env.DB_URL,
+            schema: true,
+            ssl: true
+        },
+    },
+
+    models: {
+        connection: 'MongodbServer'
+    }
+
 };

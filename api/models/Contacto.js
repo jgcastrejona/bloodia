@@ -7,6 +7,10 @@
 
 module.exports = {
 
+  tableName = 'contacto',
+  
+  schema: true,
+
   attributes: {
 
   	nombre:{

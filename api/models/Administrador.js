@@ -7,7 +7,9 @@
 
 module.exports = {
 
-	//tableName = 'admin',
+  tableName = 'admin',
+  
+  schema: true,
 
   attributes: {
   	
