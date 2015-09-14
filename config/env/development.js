@@ -20,5 +20,14 @@ module.exports = {
   // models: {
   //   connection: 'someMongodbServer'
   // }
+      connections: {
+        localDiskDb: {
+    		adapter: 'sails-disk'
+  		},
+    },
+
+   models: {
+     connection: 'localDiskDb'
+   }
 
 };

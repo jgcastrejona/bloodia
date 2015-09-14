@@ -8,6 +8,28 @@
 module.exports = {
 
   attributes: {
+  	
+  	nss: {
+  		type: 'string',
+  		required: true,
+  		primaryKey: true
+  	},
+
+  	nombre:{
+  		type: 'string',
+  		required: true
+  	},
+
+  	grupoSang: {
+  		type: 'string',
+  		required: true
+  	},
+
+  	contactoFF:{
+  		collection:'Contacto',
+  		via: 'pacienteAsignado',
+  		defaultsTo: 'NULL'
+  	}
 
   }
 };

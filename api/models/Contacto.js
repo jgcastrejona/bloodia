@@ -1,5 +1,5 @@
 /**
-* Administrador.js
+* Contacto.js
 *
 * @description :: TODO: You might write a short summary of how this model works and what it represents here.
 * @docs        :: http://sailsjs.org/#!documentation/models
@@ -7,28 +7,26 @@
 
 module.exports = {
 
-	//tableName = 'admin',
-
   attributes: {
-  	
-  	nombre: {
+
+  	nombre:{
   		type: 'string',
   		required: true
   	},
 
-  	usuario:{
+  	direccion:{
   		type: 'string',
   		required: true
   	},
 
-  	password:{
+  	telefono:{
   		type: 'string',
-  		required: true
+  		defaultsTo: '1111111111'
   	},
 
-  	tipo: {
-  		type: 'string',
-  		defaultsTo: 'Admin'
+  	pacienteAsignado:{
+  		model: 'Paciente',
+  		via: 'nss'
   	}
 
   }
